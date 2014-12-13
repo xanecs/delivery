@@ -1,0 +1,96 @@
+@import "grid_settings";
+// bower:scss
+@import "bourbon/dist/_bourbon.scss";
+@import "neat/app/assets/stylesheets/_neat.scss";
+// endbower
+
+@import "title";
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+
+$blue: #1d2d3a;
+$red: #732020;
+$gray: #3b3b3b;
+$green: #26442d;
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #231f20;
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+}
+
+strong {
+  color: #f78026;
+}
+
+.blue {
+  background: $blue;
+}
+
+.blue .element {
+  background: lighten($blue, 2%);
+  border-bottom: 2px solid darken($blue, 2%);
+}
+
+.red {
+  background: $red;
+}
+
+.red .element {
+  background: lighten($red, 2%);
+  border-bottom: 2px solid darken($red, 2%);
+}
+
+.gray {
+  background: $gray;
+}
+
+.gray .element {
+  background: lighten($gray, 2%);
+  border-bottom: 2px solid darken($gray, 2%);
+}
+
+.green {
+  background: $green;
+}
+
+.green .element {
+  background: lighten($green, 2%);
+  border-bottom: 2px solid darken($green, 2%);
+}
+
+.container {
+  padding: 16px;
+
+}
+
+.row {
+  @include outer-container;
+  max-width: 700px;
+  margin-bottom: 16px;
+}
+
+.full {
+  @include span-columns(12);
+}
+
+.element {
+  @include span-columns(4);
+  border-radius: 3px;
+  padding: 8px;
+  min-height: 150px;
+  transition: transform 0.5s ease;
+}
+
+.element:hover {
+  transform: translateY(-15px);
+}
+
+.element h1, .element h2, .element h3 {
+  margin: 0;
+}
