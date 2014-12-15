@@ -1,7 +1,7 @@
 .title {
   text-align: center;
-  text-shadow: 1px 1px 1px #b90c37;
-  margin-bottom: 50px;
+  text-shadow: 2px 2px 2px #b90c37;
+  margin: 75px 0;
 }
 
 .line {
@@ -11,5 +11,9 @@
   display: inline-block;
   vertical-align: middle;
   margin: 0 10px;
-  box-shadow: 1px 1px 1px #b90c37;
+  box-shadow: 2px 2px 2px #b90c37;
+}
+
+.title h1 {
+  font-size: 30pt;
 }

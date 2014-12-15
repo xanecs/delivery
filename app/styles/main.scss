@@ -29,7 +29,7 @@ strong {
 }
 
 .blue {
-  background: $blue;
+  background: $blue url(../images/bg_blue-01.png) center center no-repeat;
 }
 
 .blue .element {
@@ -38,7 +38,7 @@ strong {
 }
 
 .red {
-  background: $red;
+  background: $red url(../images/bg_red-01.png) center center no-repeat;
 }
 
 .red .element {
@@ -47,7 +47,7 @@ strong {
 }
 
 .gray {
-  background: $gray;
+  background: $gray url(../images/bg_gray-01.png) center center no-repeat;
 }
 
 .gray .element {
@@ -56,7 +56,7 @@ strong {
 }
 
 .green {
-  background: $green;
+  background: $green url(../images/bg_green-01.png) center center no-repeat;
 }
 
 .green .element {
